@@ -1,0 +1,9 @@
+{
+  "name": "modern-blog-project",
+  "private": true,
+  "scripts": {
+    "i": "npm install --prefix frontend && npm install --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run start --prefix backend"
+  }
+}

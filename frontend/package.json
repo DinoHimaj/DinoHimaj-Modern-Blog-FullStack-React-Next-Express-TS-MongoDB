@@ -18,7 +18,7 @@
     "date-fns": "^2.29.3",
     "eslint": "^8.36.0",
     "eslint-config-next": "^13.2.4",
-    "next": "13.2.4",
+    "next": "^16.2.4",
     "nextjs-progressbar": "^0.0.16",
     "nprogress": "^0.2.0",
     "react": "^18.2.0",
@@ -33,7 +33,9 @@
     "remark-toc": "^8.0.1",
     "sass": "^1.59.3",
     "swr": "^2.1.1",
-    "typescript": "^5.0.2",
     "yup": "^1.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
   }
 }
