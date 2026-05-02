@@ -9,6 +9,6 @@ interface createBlogPostValues {
 }
 
 export async function createBlogPost(input: createBlogPostValues) {
-  const response = await api.post<BlogPost>('/blog', input);
+  const response = await api.post<BlogPost>('/posts', input);
   return response.data;
 }
