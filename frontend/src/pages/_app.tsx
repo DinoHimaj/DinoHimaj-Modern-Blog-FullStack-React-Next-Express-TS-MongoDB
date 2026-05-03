@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { Container, SSRProvider } from 'react-bootstrap';
 import styles from '@/styles/App.module.css';
+import NavBar from '@/components/Navbar';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -18,7 +19,8 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <SSRProvider>
-        <div>
+        <div className='inter.className'>
+          <NavBar />
           <main>
             <Container className={styles.pageContainer}>
               <Component {...pageProps} />
