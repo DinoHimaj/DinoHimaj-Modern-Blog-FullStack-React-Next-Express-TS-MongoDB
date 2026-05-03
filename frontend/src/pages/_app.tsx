@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { Container, SSRProvider } from 'react-bootstrap';
 import styles from '@/styles/App.module.css';
 import NavBar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -26,6 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
               <Component {...pageProps} />
             </Container>
           </main>
+          <Footer />
         </div>
       </SSRProvider>
     </>
