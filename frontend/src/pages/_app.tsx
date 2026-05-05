@@ -5,6 +5,8 @@ import { Container, SSRProvider } from 'react-bootstrap';
 import styles from '@/styles/App.module.css';
 import NavBar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import '@/styles/utils.css';
+import NextNProgress from 'nextjs-progressbar';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -21,6 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <SSRProvider>
         <div className='inter.className'>
+          <NextNProgress color='#21fa90' />
           <NavBar />
           <main>
             <Container className={styles.pageContainer}>
